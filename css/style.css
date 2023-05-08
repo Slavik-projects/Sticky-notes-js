@@ -1,0 +1,190 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*::placeholder{
+	color: rgb(141, 140, 140);
+}
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+body{
+	height: 100%;
+	background-color: rgba(171, 190, 64, 0.5);
+}
+.header{
+	margin-top: 50px;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+}
+
+h1{
+   color: #fff;
+	font-family: 'Gwendolyn', cursive;
+	font-weight: 500;
+}
+i{
+	
+}
+.notes{
+	display: flex;
+	margin: -10px;
+}
+.notes__col{
+	margin: 10px;
+}
+button{
+	border: none;
+	cursor: pointer;
+	width: 80px;
+	height: 40px;
+	border-radius: 5px;
+	font-family: 'Calligraffitti', cursive;
+   font-family: 'Pinyon Script', cursive;
+}
+
+
+button:hover{
+	border: 0.5px solid #fff;
+	background-color: rgba(155, 112, 34, 0.856);
+	color: #fff;
+}
+.card{
+	display: block;
+	height: 300px;
+	max-width: 300px;
+	opacity: 1;
+	position: absolute;
+	top: 100px;
+	left: 600px;
+	margin: 0 auto;
+	z-index: 200;
+	box-shadow: 0 0 0 9999px #2121219f;
+}
+
+@media(max-width: 767px){
+	h1{
+		font-size: 22px;
+	}
+	header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin:10px;
+		position: absolute;
+		top: 0;
+		left: 30%;
+	}
+
+	.notes{
+		margin: 0;
+		padding: 0;
+	}
+	.notes__col{
+		margin: 0px;
+	}
+	.notes__col i{
+		margin: 0;
+		padding: 0;
+	}
+}
+
+
+@media(max-width: 767px){
+   .card{
+   display: block;
+	overflow: scroll;
+	height: 250px;
+	max-width: 300px;
+	opacity: 1;
+	position: absolute;
+	top: 100px;
+	left: 30%;
+	margin: 0 auto;
+	z-index: 200;
+	box-shadow: 0 0 0 9999px #2121219f;
+	}
+}
+@media(max-width: 649px){
+   .card{
+		left: 27%;
+	}
+}
+@media(max-width: 400px){
+   .card{
+		left: 10%;
+	}
+}
+@media(max-width: 368px){
+	.card{
+		left: 3%;
+	}
+	.flex__container{
+		padding: 0px 15px;
+	}
+}
+@media(min-width: 767px){
+	.wrapper {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	.card{
+		min-width: 300px;
+		
+	}
+	.card{
+		display: block;
+		height: 300px;
+		max-width: 300px;
+		opacity: 1;
+		z-index: 200;
+		box-shadow: 0 0 0 9999px #2121219f;
+		margin: 0px;
+		position: absolute;
+		left: 40%;
+	}
+	
+}
+.close{
+	position: absolute;
+	background-color: #fff;
+	top: 3px;
+	right: 3px;
+	cursor: pointer;
+	z-index: 100;
+}
+textarea {
+	resize:none;
+	border: none;
+	outline: none;
+	font-family: 'Mea Culpa', cursive;
+	font-size: 24px;
+	padding: 15px;
+}
+h3{
+	font-family: 'Mea Culpa', cursive;
+	font-size: 24px;
+}
+.field{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.flex__container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	justify-content: center;
+}
+.flex__item {
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+	box-shadow: 3px 5px rgba(24, 14, 14, 0.123);
+}
